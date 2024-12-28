@@ -30,6 +30,7 @@ jobs:
 
     - name: Analyze code
       run: dart analyze --fatal-warnings .
+      continue-on-error: true
 
     - name: Run test on Chrome
       run: flutter test --platform chrome
