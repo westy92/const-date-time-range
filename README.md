@@ -14,12 +14,6 @@ Install the package:
 flutter pub add const_date_time_range
 ```
 
-or
-
-```bash
-dart pub add const_date_time_range
-```
-
 ## Usage
 
 You can use a `ConstDateTimeRange` anywhere a `DateTimeRange` is expected. All major `DateTimeRange` constructors have a `const` version.

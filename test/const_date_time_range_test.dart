@@ -21,7 +21,8 @@ void main() {
       expect(constDateTimeRange == dateTimeRange, isTrue);
       expect(dateTimeRange == constDateTimeRange, isTrue);
 
-      final dateTimeRange2 = DateTimeRange(start: start.dateTime, end: end.dateTime.add(Duration(seconds: 1)));
+      final dateTimeRange2 = DateTimeRange(
+          start: start.dateTime, end: end.dateTime.add(Duration(seconds: 1)));
       expect(constDateTimeRange == dateTimeRange2, isFalse);
       expect(dateTimeRange2 == constDateTimeRange, isFalse);
     });
@@ -35,8 +36,15 @@ void main() {
     test('hashCode', () {
       expect(constDateTimeRange.hashCode == dateTimeRange.hashCode, isTrue);
 
-      final dateTimeRange2 = DateTimeRange(start: start.dateTime, end: end.dateTime.add(Duration(seconds: 1)));
+      final dateTimeRange2 = DateTimeRange(
+          start: start.dateTime, end: end.dateTime.add(Duration(seconds: 1)));
       expect(constDateTimeRange.hashCode == dateTimeRange2.hashCode, isFalse);
+    });
+
+    test('duration', () {
+      const constDateTimeRange = ConstDateTimeRange(
+          start: ConstDateTime(2024), end: ConstDateTime(2025));
+      expect(constDateTimeRange.duration == Duration(days: 366), isTrue);
     });
 
     test('date components', () {
@@ -44,10 +52,11 @@ void main() {
       expect(constDateTimeRange.end, end);
     });
 
-
     test('runtimeType', () {
-      expect(constDateTimeRange.runtimeType == constDateTimeRange.runtimeType, isTrue);
-      expect(constDateTimeRange.runtimeType == dateTimeRange.runtimeType, isTrue);
+      expect(constDateTimeRange.runtimeType == constDateTimeRange.runtimeType,
+          isTrue);
+      expect(
+          constDateTimeRange.runtimeType == dateTimeRange.runtimeType, isTrue);
       expect(constDateTimeRange.runtimeType == start.runtimeType, isFalse);
     });
   });
