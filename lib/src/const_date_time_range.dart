@@ -12,7 +12,7 @@ class ConstDateTimeRange implements DateTimeRange {
   /// The end of the range of dates.
   @override
   final ConstDateTime end;
-  
+
   @override
   Duration get duration => end.difference(start);
 

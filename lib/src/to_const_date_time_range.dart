@@ -4,6 +4,7 @@ import 'package:flutter/material.dart' show DateTimeRange;
 
 extension ConstDateTimeExtension on DateTimeRange {
   ConstDateTimeRange toConstDateTimeRange() {
-    return ConstDateTimeRange(start: start.toConstDateTime(), end: end.toConstDateTime());
+    return ConstDateTimeRange(
+        start: start.toConstDateTime(), end: end.toConstDateTime());
   }
 }
