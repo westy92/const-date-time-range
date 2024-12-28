@@ -28,9 +28,9 @@ jobs:
     - name: Check formatting
       run: dart format --set-exit-if-changed .
 
-    - name: Analyze code
-      run: dart analyze --fatal-warnings .
-      continue-on-error: true
+    # Failing on success: "Error: The operation was canceled."
+    #- name: Analyze code
+    #  run: dart analyze --fatal-warnings .
 
     - name: Run test on Chrome
       run: flutter test --platform chrome
