@@ -41,6 +41,11 @@ void main() {
       expect(constDateTimeRange.hashCode == dateTimeRange2.hashCode, isFalse);
     });
 
+    test('duration', () {
+      const constDateTimeRange = ConstDateTimeRange(start: ConstDateTime(2024), end: ConstDateTime(2025));
+      expect(constDateTimeRange.duration == Duration(days: 366), isTrue);
+    });
+
     test('date components', () {
       expect(constDateTimeRange.start, start);
       expect(constDateTimeRange.end, end);
