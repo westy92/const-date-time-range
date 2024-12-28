@@ -36,6 +36,7 @@ final DateTimeRange dtr = cdtr.dateTimeRange;
 // other getters are available as well:
 final ConstDateTime dtrStart = cdtr.start;
 final ConstDateTime dtrEnd = cdtr.end;
+final Duration dtrDur = cdtr.duration;
 ```
 
 You can convert a `DateTimeRange` to a `ConstDateTimeRange`.
