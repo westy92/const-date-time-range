@@ -42,7 +42,8 @@ void main() {
     });
 
     test('duration', () {
-      const constDateTimeRange = ConstDateTimeRange(start: ConstDateTime(2024), end: ConstDateTime(2025));
+      const constDateTimeRange = ConstDateTimeRange(
+          start: ConstDateTime(2024), end: ConstDateTime(2025));
       expect(constDateTimeRange.duration == Duration(days: 366), isTrue);
     });
 
