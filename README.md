@@ -4,7 +4,7 @@
 [![Code Coverage](https://codecov.io/gh/westy92/const-date-time-range/branch/main/graph/badge.svg)](https://codecov.io/gh/westy92/const-date-time-range)
 [![Funding Status](https://img.shields.io/github/sponsors/westy92)](https://github.com/sponsors/westy92)
 
-A drop-in replacement for Dart's `DateTimeRange` class with `const` constructors.
+A drop-in replacement for Dart's `DateTimeRange` class with `const` constructors. Builds on top of the [const_date_time package](https://pub.dev/packages/const_date_time).
 
 ## Getting started
 

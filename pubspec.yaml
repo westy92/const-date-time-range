@@ -1,6 +1,6 @@
 name: const_date_time_range
 description: A drop-in replacement for Dart's DateTimRange class with const constructors.
-version: 0.0.1
+version: 1.0.0
 repository: https://github.com/westy92/const-date-time-range
 issue_tracker: https://github.com/westy92/const-date-tim-range/issues
 funding:
