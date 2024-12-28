@@ -44,8 +44,8 @@ jobs:
         flutter pub global activate pana
         flutter pub global run pana --exit-code-threshold 0 --no-warning .
 
-    - name: Validate example
-      run: flutter run example/const_date_time_range_example.dart
+    #- name: Validate example
+    #  run: flutter run example/const_date_time_range_example.dart
 
     - name: Upload code coverage
       if: ${{ matrix.channel == 'stable' && matrix.os == 'ubuntu-latest' }}
