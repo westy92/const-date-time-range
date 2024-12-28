@@ -29,7 +29,7 @@ jobs:
       run: dart format --set-exit-if-changed .
 
     - name: Analyze code
-      run: flutter analyze --fatal-warnings .
+      run: dart analyze --fatal-warnings .
 
     - name: Run test on Chrome
       run: flutter test --platform chrome
