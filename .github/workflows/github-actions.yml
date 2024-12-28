@@ -37,8 +37,7 @@ jobs:
 
     - name: Run tests
       run: |
-        flutter pub global activate coverage
-        flutter pub global run coverage:test_with_coverage
+        flutter test --coverage
 
     - name: Run pana
       run: |
