@@ -37,11 +37,6 @@ class ConstDateTimeRange implements DateTimeRange {
     return dateTimeRange.toString();
   }
 
-  @override
-  dynamic noSuchMethod(Invocation invocation) {
-    return super.noSuchMethod(invocation);
-  }
-
   DateTimeRange get dateTimeRange {
     return DateTimeRange(start: start.dateTime, end: end.dateTime);
   }
